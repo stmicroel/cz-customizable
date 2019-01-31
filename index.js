@@ -17,7 +17,7 @@ var buildCommit = require('./buildCommit');
 function readConfigFile() {
 
   // First try to find the .cz-config.js config file
-  var czConfig = findConfig.require(CZ_CONFIG_NAME, {home: false});
+  var czConfig = findConfig.require(CZ_CONFIG_NAME, {home: true});
   if (czConfig) {
     return czConfig;
   }
